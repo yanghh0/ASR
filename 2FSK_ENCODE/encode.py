@@ -192,9 +192,6 @@ def AddMaskAudio(data, audio_name):
     # print("framerate:", framerate)
     # print("  nframes:", nframes)
 
-    while True:
-        pass
-
     str_data = f.readframes(nframes)
     f.close()
     wave_data = np.fromstring(str_data, dtype=np.int16)
