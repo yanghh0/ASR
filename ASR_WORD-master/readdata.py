@@ -82,7 +82,7 @@ class DataSpeech():
                 X[i , 0:len(data_input)] = data_input
                 y[i , 0:len(data_labels)] = data_labels
                 label_length.append([len(data_labels)])
-                input_length.append(data_input.shape[0] // 8)                              #卷积修改第一处；
+                input_length.append(data_input.shape[0] // 8)                              # 卷积修改第一处；
             label_length = np.array(label_length)
             input_length = np.array(input_length).T
             yield [X , y , input_length , label_length] , labels
